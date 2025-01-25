@@ -36,10 +36,12 @@ function displayProducts(products){
                 <p class="product-main__description">${product.description}</p>
                 <h3 class="product-main__price">${formattedPrice}</h3>
             </div>
-            <button class="product__add-button" type="button" aria-label="Add product">Agregar</button>
-        `]
-        productsList.appendChild(article)
+            <button id="${product.price}" class="product__add-button" type="button" aria-label="Add product">Agregar</button>
+            `]
+            productsList.appendChild(article)
+
     });
+
 }
 
 loadProducts();
